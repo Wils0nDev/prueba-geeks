@@ -5,13 +5,15 @@ import { AngularMaterialModule } from '../angular-material/angular-material.modu
 import { CardComponent } from './card/card.component';
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { LoadingImageComponent } from './loading-image/loading-image.component';
+import { SnackBarComponent } from './snackbar/snackbar.component';
 
 
 
 @NgModule({
   declarations: [
     CardComponent,
-    LoadingImageComponent
+    LoadingImageComponent,
+    SnackBarComponent
   ],
   imports: [
     CommonModule,
@@ -22,7 +24,8 @@ import { LoadingImageComponent } from './loading-image/loading-image.component';
   exports:[
     AngularMaterialModule,
     CardComponent,
-    LoadingImageComponent
+    LoadingImageComponent,
+    SnackBarComponent
   ]
 })
 export class ComponentsModule { }
