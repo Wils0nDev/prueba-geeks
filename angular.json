@@ -30,12 +30,21 @@
               "src/assets"
             ],
             "styles": [
+             "@angular/material/prebuilt-themes/deeppurple-amber.css",
+             "./node_modules/primeflex/primeflex.css",
               "src/styles.scss"
+
             ],
             "scripts": []
           },
           "configurations": {
             "production": {
+              "fileReplacements": [
+                {
+                  "replace": "src/enviroments/enviroments.ts",
+                  "with": "src/enviroments/enviroments.prd.ts"
+                }
+              ],
               "budgets": [
                 {
                   "type": "initial",
@@ -93,6 +102,7 @@
               "src/assets"
             ],
             "styles": [
+              "@angular/material/prebuilt-themes/pink-bluegrey.css",
               "src/styles.scss"
             ],
             "scripts": []
